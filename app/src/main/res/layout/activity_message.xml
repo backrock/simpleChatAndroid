@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:background="@color/line_color"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+<ListView
+    android:id="@+id/list_msg"
+    android:divider="@null"
+    android:transcriptMode="alwaysScroll"
+    android:stackFromBottom="true"
+    android:background="@color/white"
+    android:layout_marginBottom="50dp"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"/>
+    <LinearLayout
+        android:layout_marginTop="1dp"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:background="@color/white"
+        android:layout_alignParentBottom="true"
+        android:layout_width="match_parent"
+        android:layout_height="49dp">
+    <Button android:id="@+id/btn_img"
+        android:background="@drawable/shape_button_pink"
+        android:textColor="@color/white"
+        android:layout_marginLeft="10dp"
+        android:layout_width="60dp"
+        android:layout_height="40dp"
+        android:text="图片"/>
+        <EditText
+            android:id="@+id/et_msg"
+            android:layout_width="wrap_content"
+            android:layout_weight="1"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:background="@drawable/shape_textgray"
+            android:layout_height="40dp" />
+        <Button android:id="@+id/btn_send"
+            android:background="@drawable/shape_textgray"
+            android:textColor="@color/red"
+            android:layout_marginRight="10dp"
+            android:layout_width="60dp"
+            android:layout_height="40dp"
+            android:text="发送"/>
+    </LinearLayout>
+</RelativeLayout>
